@@ -99,7 +99,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="blurr.vb" />
     <Compile Include="Customer\welcome.xaml.vb">
       <DependentUpon>welcome.xaml</DependentUpon>
     </Compile>
