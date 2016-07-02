@@ -1,0 +1,46 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:domain="clr-namespace:WpfApplication2"
+     
+        
+    xmlns:domain2="clr-namespace:WpfApplication2.WpfApplication2.Domain"
+    Title="MainWindow" Height="285.821" Width="429.477" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" IsTabStop="True" WindowStyle="None">
+
+
+    <Grid Margin="0,0,0,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="360*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="100"/>
+            <RowDefinition Height="Auto" MinHeight="60"/>
+            <RowDefinition Height="auto" MinHeight="60"/>
+            <RowDefinition Height="auto" MinHeight="60"/>
+
+
+        </Grid.RowDefinitions>
+        <materialDesign:PackIcon Kind ="Account" Margin="0,24,0,0" Grid.Row="1" Height="18" Width="15" Grid.Column="1" RenderTransformOrigin="0.933,0.444" />
+        <TextBox x:Name="textbox_user" HorizontalAlignment="Left" Height="25" Margin="1,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" Grid.Row="1" TabIndex="1" Grid.Column="2"  materialDesign:HintAssist.Hint="User Name"  TextAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox.Text>
+                <Binding Path="Name" UpdateSourceTrigger="PropertyChanged" NotifyOnTargetUpdated="True">
+                    <Binding.ValidationRules>
+                        <domain2:NotEmptyValidationRule ValidatesOnTargetUpdated="False" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+
+        <Button x:Name="btn_login" Content="Login" HorizontalAlignment="Left" Margin="44,17,0,0" Grid.Row="3" Width="74" TabIndex="3" VerticalAlignment="Top" Grid.Column="2"/>
+        <materialDesign:PackIcon Kind="Key" Height="20" Width="16" Grid.Column="1" Grid.Row="2" Margin="1,26,0,0" />
+        <PasswordBox x:Name="password_box" HorizontalAlignment="Left" Margin="1,26,0,0" Grid.Row="2" Width="288" Height="25" TabIndex="2" VerticalAlignment="Top"  Grid.Column="2" materialDesign:HintAssist.Hint="Password" HorizontalContentAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="71" Margin="88,29,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="LOGIN.jpg" Grid.Column="2"  />
+        <Button x:Name="btn_close" Content="Close" HorizontalAlignment="Right" Margin="0,17,129,0" Grid.Row="3" VerticalAlignment="Top" Width="75" TabIndex="4" Grid.Column="2"/>
+        
+    </Grid>
+</Window>

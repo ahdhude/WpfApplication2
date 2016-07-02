@@ -1,0 +1,34 @@
+﻿<Window x:Class="menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="menu" Height="364.179" Width="573.134">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="287*"/>
+            <ColumnDefinition Width="278*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="116*"/>
+            <RowDefinition Height="217*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="loginform_btn" Content="loginform" HorizontalAlignment="Center" Margin="73,24,61,29" Width="153" Height="63" VerticalAlignment="Center"/>
+        <Button x:Name="userform_btn" HorizontalAlignment="Left" Margin="76,24,0,0" VerticalAlignment="Top" Width="153" Height="63" Grid.Column="1">
+            <Button Content="Button" Width="75"/>
+        </Button>
+        <Grid Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="287*"/>
+                <ColumnDefinition Width="278*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="116*"/>
+                <RowDefinition Height="217*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="loginform_btn1" Content="loginform" HorizontalAlignment="Center" Margin="73,24,61,29" Width="153" Height="63" VerticalAlignment="Center"/>
+            <Button x:Name="userform_btn1" HorizontalAlignment="Left" Margin="76,24,0,0" VerticalAlignment="Top" Width="153" Height="63" Grid.Column="1">
+                <Button Content="Button" Width="75"/>
+            </Button>
+            <Button x:Name="welcomeform_btn" Content="welcomeform" HorizontalAlignment="Center" Margin="73,57,61,97" Width="153" Height="63" VerticalAlignment="Center" Grid.Row="1"/>
+        </Grid>
+    </Grid>
+</Window>
