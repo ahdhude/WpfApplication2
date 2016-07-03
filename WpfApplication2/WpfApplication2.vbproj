@@ -108,6 +108,9 @@
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Domain\NotEmptyValidationRule.vb" />
+    <Compile Include="license\question.xaml.vb">
+      <DependentUpon>question.xaml</DependentUpon>
+    </Compile>
     <Compile Include="User\newuser.xaml.vb">
       <DependentUpon>newuser.xaml</DependentUpon>
     </Compile>
@@ -115,6 +118,10 @@
       <DependentUpon>users.xaml</DependentUpon>
     </Compile>
     <Page Include="Customer\welcome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="license\question.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
