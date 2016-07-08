@@ -5,12 +5,88 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="question" Height="411.628" Width="679.07" ResizeMode="NoResize" WindowStyle="None">
+        Title="question" Height="676.128" Width="679.07" ResizeMode="NoResize" WindowStyle="None">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="123*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="405*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="48*"/>
+            <ColumnDefinition Width="14*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="28*"/>
-            <RowDefinition Height="75*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="113*"/>
+            <RowDefinition Height="492*"/>
+            <RowDefinition Height="17*"/>
         </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Grid.Column="4" Grid.ColumnSpan="3">
+            <Label x:Name="label" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center">
+                <Label x:Name="label1" Content="99:99" Width="107" FontSize="24" Height="37" HorizontalContentAlignment="Center" FontWeight="Bold" />
+            </Label>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="1" VerticalAlignment="Stretch"   >
+            <Image x:Name="image" HorizontalAlignment="Stretch" Height="100" VerticalAlignment="Stretch" />
+        </StackPanel>
+        <StackPanel Grid.Column="3" HorizontalAlignment="Stretch"  Grid.Row="1" VerticalAlignment="Stretch" Grid.ColumnSpan="2" UseLayoutRounding="True"   >
+            <TextBlock x:Name="label_question" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="މިއަދަކީ ކޮންދުވަހެއް އަދި މިއަގުގެ މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ" VerticalAlignment="Stretch" FontSize="20" FlowDirection="RightToLeft" Height="98" LineHeight="36" FontFamily="Faruma"/>
+
+        </StackPanel>
+        <StackPanel Grid.Column="5" HorizontalAlignment="Stretch"  Grid.Row="1" VerticalAlignment="Stretch" />
+        <Label x:Name="label4" Grid.Column="5" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Center" HorizontalContentAlignment="Right" FontSize="24" FontWeight="Bold" Margin="0,26,0,35" Height="52">
+            <Label x:Name="label_numb" Content="1"/>
+        </Label>
+        <Grid Grid.ColumnSpan="5" Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Stretch" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90*"/>
+                <RowDefinition Height="90*"/>
+                <RowDefinition Height="90*"/>
+                <RowDefinition Height="90*"/>
+                <RowDefinition Height="100*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="29*"/>
+                <ColumnDefinition Width="94*"/>
+                <ColumnDefinition Width="530*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="image1" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
+            <StackPanel Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                <RadioButton FontFamily="Faruma" FontSize="16" FlowDirection="RightToLeft" Height="88" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Center">
+                    <RadioButton.Content>
+                        <TextBlock Text="މިއަދަކީ ކޮންދުވަހެއް އަދި މިއަގުގެ މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ މިއަދަކީ ކޮންދުވަހެއް އަދި މިއަގުގެ މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ  މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ " TextWrapping="Wrap" Padding="1,0,3,0"/>
+                    </RadioButton.Content>
+                </RadioButton>
+            </StackPanel>
+            <StackPanel Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" >
+                <RadioButton FontFamily="Faruma" FontSize="16" FlowDirection="RightToLeft" Height="88" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Center">
+                    <RadioButton.Content>
+                        <TextBlock Text="މިއަދަކީ ކޮންދުވަހެއް އަދި މިއަގުގެ މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ މިއަދަކީ ކޮންދުވަހެއް އަދި މިއަގުގެ މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ  މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ " TextWrapping="Wrap" Padding="1,0,3,0"/>
+                    </RadioButton.Content>
+                </RadioButton>
+            </StackPanel>
+            <StackPanel Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Stretch" >
+                <RadioButton FontFamily="Faruma" FontSize="16" FlowDirection="RightToLeft" Height="88" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Center">
+                    <RadioButton.Content>
+                        <TextBlock Text="މިއަދަކީ ކޮންދުވަހެއް އަދި މިއަގުގެ މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ މިއަދަކީ ކޮންދުވަހެއް އަދި މިއަގުގެ މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ  މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ " TextWrapping="Wrap" Padding="1,0,3,0"/>
+                    </RadioButton.Content>
+                </RadioButton>
+            </StackPanel>
+            <StackPanel Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="3" VerticalAlignment="Stretch" >
+                <RadioButton FontFamily="Faruma" FontSize="16" FlowDirection="RightToLeft" Height="88" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Center">
+                    <RadioButton.Content>
+                        <TextBlock Text="މިއަދަކީ ކޮންދުވަހެއް އަދި މިއަގުގެ މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ މިއަދަކީ ކޮންދުވަހެއް އަދި މިއަގުގެ މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ  މެނޫއަކީ ކޮބާ ނަމަކީ އަބްދު ﷲ އަދި މިދުވަދަ " TextWrapping="Wrap" Padding="1,0,3,0"/>
+                    </RadioButton.Content>
+                </RadioButton>
+            </StackPanel>
+            <StackPanel Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="4" VerticalAlignment="Center"  >
+                <Button x:Name="button" Content="ކުރިޔަށް" d:LayoutOverrides="Height" HorizontalContentAlignment="Center" FontFamily="Faruma" FlowDirection="RightToLeft" />
+            </StackPanel>
+            <Image x:Name="image2" Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="1" VerticalAlignment="Stretch" />
+            <Image x:Name="image3" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="2"/>
+            <Image x:Name="image4"  Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="3" VerticalAlignment="Stretch" />
+        </Grid>
 
     </Grid>
 </Window>
