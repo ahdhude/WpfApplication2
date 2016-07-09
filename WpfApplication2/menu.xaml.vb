@@ -21,4 +21,9 @@
         Dim login As New MainWindow
         login.Show()
     End Sub
+
+    Private Sub button_Click(sender As Object, e As RoutedEventArgs) Handles button.Click
+        Dim question As New question
+        question.Show()
+    End Sub
 End Class

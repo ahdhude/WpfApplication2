@@ -29,6 +29,7 @@
                 <Button Content="Button" Width="75"/>
             </Button>
             <Button x:Name="welcomeform_btn" Content="welcomeform" HorizontalAlignment="Center" Margin="73,57,61,97" Width="153" Height="63" VerticalAlignment="Center" Grid.Row="1"/>
+            <Button x:Name="button" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="125,79,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
         </Grid>
     </Grid>
 </Window>

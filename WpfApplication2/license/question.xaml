@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="question" Height="676.128" Width="679.07" ResizeMode="NoResize" WindowStyle="None">
+        Title="question" Height="676.128" Width="679.07" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="12*"/>

@@ -38,13 +38,13 @@
             <Label x:Name="label" Content="Customer Information" FontWeight="Bold" FontFamily="Calibri" FontSize="24"/>
         </StackPanel>
         <StackPanel Grid.Column="2" HorizontalAlignment="Stretch"   Grid.Row="2" VerticalAlignment="Stretch" >
-            <TextBox x:Name="textBox"  TextWrapping="Wrap" materialDesign:HintAssist.Hint="Full Name" Height="28" FontSize="14" TabIndex="1"/>
+            <TextBox x:Name="textbox_name"  TextWrapping="Wrap" materialDesign:HintAssist.Hint="Full Name" Height="28" FontSize="14" TabIndex="1"/>
         </StackPanel>
         <StackPanel Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Stretch">
             <materialDesign:PackIcon Kind ="Account" Height="auto" Width="auto" />
         </StackPanel>
         <StackPanel Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="4" VerticalAlignment="Stretch" >
-            <TextBox x:Name="textBox1" Height="30" TextWrapping="Wrap" materialDesign:HintAssist.Hint="Id Number" FontSize="14" TabIndex="2"/>
+            <TextBox x:Name="textbox_idnum" Height="30" TextWrapping="Wrap" materialDesign:HintAssist.Hint="Id Number" FontSize="14" TabIndex="2"/>
         </StackPanel>
         <StackPanel Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="4" VerticalAlignment="Stretch">
             <materialDesign:PackIcon Kind ="Numeric" Height="auto" Width="auto"  />
@@ -56,7 +56,7 @@
             <materialDesign:PackIcon Kind ="Calendar" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="34" Width="Auto" />
         </StackPanel>
         <StackPanel Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="8" VerticalAlignment="Stretch">
-            <TextBox x:Name="textBox2" TabIndex="4" HorizontalAlignment="Stretch"  TextWrapping="Wrap" materialDesign:HintAssist.Hint="License Number" VerticalAlignment="Stretch" Height="29" FontSize="14" />
+            <TextBox x:Name="textbox_linum" TabIndex="4" HorizontalAlignment="Stretch"  TextWrapping="Wrap" materialDesign:HintAssist.Hint="License Number" VerticalAlignment="Stretch" Height="29" FontSize="14" />
         </StackPanel>
         <StackPanel Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="8" VerticalAlignment="Stretch" >
             <materialDesign:PackIcon Kind ="Numeric"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="35" Width="Auto" />
@@ -64,14 +64,14 @@
         <Button x:Name="btn_submit" TabIndex="8" Content="Submit" Grid.Column="2" HorizontalAlignment="Left" Margin="44,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="80" Height="41"/>
         <Button x:Name="btn_close"  TabIndex="9" Content="Close" Grid.Column="5" HorizontalAlignment="Left" Margin="39,0,0,0" Grid.Row="10" VerticalAlignment="Top" Width="80" Height="41"/>
         <StackPanel Grid.Column="5" HorizontalAlignment="Stretch"  Grid.Row="2" VerticalAlignment="Stretch" >
-            <TextBox x:Name="textBox3"  TabIndex="5" TextWrapping="Wrap" materialDesign:HintAssist.Hint="Address"  Height="28
+            <TextBox x:Name="textbox_address" TabIndex="5" TextWrapping="Wrap" materialDesign:HintAssist.Hint="Address"  Height="28
                      " FontSize="14"/>
         </StackPanel>
         <StackPanel Grid.Column="5" HorizontalAlignment="Stretch"  Grid.Row="4" VerticalAlignment="Stretch">
-            <ComboBox x:Name="comboBox" TabIndex="6" VerticalAlignment="Stretch" Height="29" FontSize="14" materialDesign:HintAssist.Hint="Atoll"/>
+            <ComboBox x:Name="combo_atoll" TabIndex="6" VerticalAlignment="Stretch" Height="29" FontSize="14" materialDesign:HintAssist.Hint="Atoll"/>
         </StackPanel>
         <StackPanel Grid.Column="5" HorizontalAlignment="Stretch"  Grid.Row="6" VerticalAlignment="Stretch" >
-            <ComboBox x:Name="comboBox1" TabIndex="7" VerticalAlignment="Stretch" Height="30" FontSize="14" materialDesign:HintAssist.Hint="Island"/>
+            <ComboBox x:Name="combo_island" TabIndex="7" VerticalAlignment="Stretch" Height="30" FontSize="14" materialDesign:HintAssist.Hint="Island"/>
         </StackPanel>
         <materialDesign:PackIcon Kind ="Home" Height="35" Width="29" Grid.Column="4" Grid.Row="2" Grid.RowSpan="2" />
         <materialDesign:PackIcon Kind ="City" Height="35" Width="29" Grid.Column="4" Grid.Row="4" Grid.RowSpan="2" />
